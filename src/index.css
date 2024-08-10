@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #2b283a;
+    --index: calc(1vw + 1vh);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    color: var(--main-color);
+    font-size: 1.1rem;
+    font-family: "Inter", sans-serif;
+}

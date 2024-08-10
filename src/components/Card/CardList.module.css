@@ -1,0 +1,10 @@
+.cardList {
+    max-width: 70%;
+    margin: 40px auto;
+}
+
+@media (max-width: 589px) {
+    .cardList {
+        max-width: 100%;
+    }
+}

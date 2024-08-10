@@ -1,0 +1,98 @@
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin-bottom: 30px;
+}
+
+.cardImgWrapper {
+    width: 240px;
+    height: 350px;
+}
+
+.cardImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.mapIcon {
+    --map-icon-size: calc(var(--index) * 0.9);
+    width: var(--map-icon-size);
+    height: var(--map-icon-size);
+}
+
+.info {
+    max-width: calc(100% - 260px);
+    height: 100%;
+    margin: auto;
+}
+
+.info > h2 {
+    margin-bottom: 40px;
+}
+
+.info > time {
+    font-weight: bold;
+}
+
+.info > p {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.location > p {
+    margin-right: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.location > a {
+    text-decoration: underline;
+    color: #918E9B;
+    font-size: 0.7em;
+}
+
+
+@media (max-width: 671px) {
+    .cardImgWrapper {
+        width: calc(var(--index) * 13);
+        height: calc(var(--index) * 20);
+    }
+
+    .info > h2 {
+        margin-bottom: 10px;
+    }
+
+    .info > p {
+        margin-top: 5px;
+    }
+
+    .mapIcon {
+        --map-icon-size: calc(var(--index) * 1.4);
+    }
+}
+
+@media (max-width: 589px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .cardImgWrapper {
+        margin: auto;
+        width: 90%;
+    }
+
+    .info {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+}
